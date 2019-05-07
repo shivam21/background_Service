@@ -23,8 +23,8 @@ class TemporaryService : Service() {
             .setContentText("Checking messages...").build()
         startForeground(NOTIFICATION_ID, notification)
         startService(Intent(this, PermanentService::class.java))
-//        stopForeground(true)
-//        stopSelf()
+        stopForeground(true)
+        stopSelf()
 
     }
 
